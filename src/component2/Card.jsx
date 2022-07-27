@@ -7,7 +7,7 @@ export const Card = props => {
 
     return(
         <div key={id} className="relative" aria-label="showcase-card">
-            <img className='w-[580px]' src={`/src/component/showcase/assets/${avatar}`} alt={`${name}-avatar`} />
+            <img className='w-[580px]' src={`/${avatar}`} alt={`${name}-avatar`} />
             <div className='text-white bg-gray-500 absolute w-full p-3 opacity-80 -translate-y-0 transition duration-500' aria-label='infomation-app'>
                 <div className='flex gap-x-2' aria-label='wrapper-logo'>
                     <a href={githubURL} target="_blank">
