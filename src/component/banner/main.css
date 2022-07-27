@@ -1,4 +1,33 @@
-[aria-label="banner-wrapper"] {
-    background: url("./assets/avatar.png") no-repeat 730px 70px;
-    background-size: 28%;
+[aria-label="banner-container"] {
+    background: url("./assets/avatar.png") no-repeat right 260px;
+    background-size:80%;
+}
+
+
+@media (min-width: 375px) {
+    [aria-label="banner-container"] {
+        background: url("./assets/avatar.png") no-repeat right 220px;
+        background-size: 80%;
+    }
+}
+
+@media (min-width: 425px) {
+    [aria-label="banner-container"] {
+        background: url("./assets/avatar.png") no-repeat right 230px;
+        background-size: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    [aria-label="banner-container"] {
+        background: url("./assets/avatar.png") no-repeat right 150px;
+        background-size: 45%;
+    }
+}
+
+@media (min-width: 1028px) {
+    [aria-label="banner-container"] {
+        background: url("./assets/avatar.png") no-repeat right 100px;
+        background-size: 45%;
+    }
 }

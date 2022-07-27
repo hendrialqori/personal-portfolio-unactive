@@ -1,0 +1,3 @@
+[aria-label="showcase-card"]:hover [aria-label='infomation-app'] {
+    transform: translateY(-120px);
+}

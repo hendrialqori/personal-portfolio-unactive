@@ -1,22 +1,46 @@
+import { useEffect, useRef, useState } from 'react'
 import dark from './assets/Darkmode.svg'
+import light from './assets/Lightmode.svg'
 import github from './assets/github.svg'
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 export const Navigasi = () => {
 
+    const btnTopRef = useRef(null)
+    const [isDark, setDark] = useState(true)
+    const mode = () => {
+        document.documentElement.classList.toggle('dark')
+        setDark(prev => !prev)
+    }
 
-    const mode = () => {}
+    const toTop = () => window.scrollTo({ top: 0, behavior : "smooth" })
+
+    const showButton = (e) => {
+        if(window.scrollY > 1500 ) btnTopRef.current.classList.remove("hidden")
+        else btnTopRef.current.classList.add("hidden")
+    }
+
+    useEffect(()=> {
+        window.addEventListener("scroll", showButton)     
+        document.documentElement.classList.add('dark')
+    },[])
+
 
     return (
-        <section className="w-11/12 lg:w-[768px] mx-auto flex justify-between items-center py-12">
-            <h1 ><span className="font-bold">Hendri</span> Alqori</h1>
+        <header className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto flex justify-between items-center py-7 md:py-12">
+            <h1 className=' text-black dark:text-white dark:font-light' ><span className="font-bold">Hendri</span> Alqori</h1>
             <div className='flex gap-x-2' aria-label="wrapper-logo">
-                <button onClick={()=> mode()}>
-                    <img src={dark} alt="dark-mode-logo" />
+                <button className='overflow-hidden h-8' onClick={()=> mode()}>
+                    <img style={{ transform:isDark ? "translateY(0px)" : "translateY(-33px)" }} src={light} alt="light-mode-icon" /> 
+                    <img style={{ transform:isDark ? "translateY(0px)" : "translateY(-33px)" }} src={dark} alt="light-mode-icon" /> 
                 </button>
-                <a href='https://www.google.com'>
-                    <img src={github} alt="github-logo" />
+                <a href='https://github.com/alqory' target="_blank">
+                    <img className='bg-white rounded-md' src={github} alt="github-logo" />
                 </a>
             </div>
-        </section>
+            <button ref={btnTopRef} onClick={()=> toTop()} className='hidden fixed bottom-28 right-5 md:right-10 p-1 md:p-2 rounded-full bg-gray-500'>
+                <AiOutlineArrowUp className='text-white text-xl md:text-2xl' />
+            </button>
+        </header>
     )
 }
