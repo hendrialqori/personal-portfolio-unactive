@@ -7,7 +7,7 @@ export const Banner = () => {
                 <div className="bg-green w-max text-white font-bold px-2 py-1 rounded-md">
                     <p>Frontend Developer</p>
                 </div>
-               <div className="h-[368px] w-max flex flex-col md:justify-between " aria-label="banner-text-wrapper">
+               <div className="h-max md:h-[368px] w-max flex flex-col md:justify-between " aria-label="banner-text-wrapper">
                 <h1 className="text-3xl md:text-4xl font-light mt-10 text-black dark:text-white">
                         Solve the problem, <br />
                         <div className="font-bold">
