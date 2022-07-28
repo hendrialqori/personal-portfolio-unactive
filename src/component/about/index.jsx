@@ -1,6 +1,6 @@
 export const About = () => {
     return (
-        <section className="bg-dark2">
+        <section className="bg-dark2 dark:bg-dark3">
             <div className="py-28 w-11/12 md:w-10/12 lg:w-[768px] mx-auto flex flex-col md:flex-row justify-between items-center gap-y-4" aria-label="about-container">
                 <div className="w-full md:w-6/12" aria-label="profile">
                     <h1 className="text-white text-2xl md:text-3xl">
@@ -21,11 +21,11 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-5/12 flex flex-col gap-y-6" aria-label="skill">
-                    <div className="bg-dark3 rounded-md py-5 px-8" aria-label="design">
+                    <div className="dark:bg-dark2 bg-dark3 rounded-md py-5 px-8" aria-label="design">
                         <h1 className="text-green text-3xl font-extrabold mb-3">Design</h1>
                         <p className="text-gray-400 text-sm">Create modern design with figma</p>
                     </div>
-                    <div className="bg-dark3 rounded-md py-5 px-8" aria-label="design">
+                    <div className="dark:bg-dark2 bg-dark3 rounded-md py-5 px-8" aria-label="design">
                         <h1 className="text-green text-3xl font-extrabold mb-3">Front-End</h1>
                         <p className="text-gray-400 text-sm">Slicing with frontend tech and deploy on cloud</p>
                     </div>

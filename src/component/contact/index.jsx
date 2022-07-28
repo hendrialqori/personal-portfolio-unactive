@@ -48,7 +48,7 @@ export const Contact = () => {
 
 
     return(
-        <section className="bg-dark1">
+        <section className="bg-dark2 dark:bg-dark3">
             <div className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto py-28">
                 <h1 className="text-green text-5xl font-extrabold text-right">
                     better- <br /> Together
@@ -60,7 +60,7 @@ export const Contact = () => {
                             name="email"
                             value={email}
                             onChange={handleChange}
-                            className="py-3 px-2 text-sm outline-none rounded-md bg-dark3 w-[50%]" 
+                            className="py-3 px-2 text-sm outline-none rounded-md bg-dark3 dark:bg-dark2 w-[50%]" 
                             type="text" 
                             placeholder="your email" 
                             required 
@@ -70,7 +70,7 @@ export const Contact = () => {
                             name="subject"
                             value={subject}
                             onChange={handleChange}
-                            className="py-3 px-2 text-sm outline-none rounded-md bg-dark3 w-[50%]" 
+                            className="py-3 px-2 text-sm outline-none rounded-md bg-dark3 dark:bg-dark2 w-[50%]" 
                             type="text" 
                             placeholder="subject" 
                             required 
@@ -81,7 +81,7 @@ export const Contact = () => {
                             name="text"
                             value={text}
                             onChange={handleChange}
-                            className="rounded-md p-3 outline-none bg-dark3 mt-1 md:mt-3 w-full md:w-max"
+                            className="rounded-md p-3 outline-none bg-dark3 dark:bg-dark2 mt-1 md:mt-3 w-full md:w-max"
                             cols="39"
                             rows="5"
                             placeholder="text"
@@ -100,7 +100,7 @@ export const Contact = () => {
                         </div>
                         <div className='flex items-center gap-x-3'>
                             <img src={wa} alt="gmail-icon" />
-                            <h2>+62 896 7756 6550</h2>
+                            <h2>+62 896 7754 6550</h2>
                         </div>
                         <div className='flex items-center gap-x-3'>
                             <img src={linked} alt="gmail-icon" />
