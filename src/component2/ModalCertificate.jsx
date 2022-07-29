@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { ImCross } from 'react-icons/im'
 import  kodio from './assets/kodio.png'
-import aming from './assets/aming.png'
+import html from './assets/html.jpg'
 
 export const Certificate = ({ showModal, showTrigger }) => {
     
@@ -25,10 +25,9 @@ export const Certificate = ({ showModal, showTrigger }) => {
             className="bg-gray-500 w-[768px] overflow-auto mx-auto my-auto h-[500px] flex gap-x-3 border-[1px]  " 
             aria-label="modal-container">
                 <img src={kodio} alt="kodio-image" />
-                <img src={aming} alt="kodio-image" />
+                <img src={html} alt="kodio-image" />
         </div>
         </motion.div>
     )
 }
 
- 
