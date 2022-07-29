@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import config from '../../contanst/emailConfig.js'
 import gmail from './assets/gmail.svg'
