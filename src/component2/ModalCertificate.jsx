@@ -31,3 +31,4 @@ export const Certificate = ({ showModal, showTrigger }) => {
     )
 }
 
+ 
