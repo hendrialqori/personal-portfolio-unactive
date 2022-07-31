@@ -88,7 +88,7 @@ export const Contact = () => {
                             required
                             />
                         <button 
-                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-base md:font-bold ml-0 md:ml-2 mr-auto hover:opacity-80"
+                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-light md:font-bold mr-auto hover:opacity-80"
                         >
                         { loading ? "Loading .." : "Submit" }
                         </button>

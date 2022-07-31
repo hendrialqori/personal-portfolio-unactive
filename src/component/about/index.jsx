@@ -31,7 +31,7 @@ export const About = () => {
                         and Postgresql (DB) , And for web design
                         like Figma.
                     </div>
-                    <button onClick={()=> showTrigger()} className="text-green flex items-center mt-3 font-semibold">
+                    <button onClick={()=> showTrigger()} className="text-green flex text-sm  items-center mt-5 md:mt-3 font-semibold">
                         See my certificate
                         <BsArrowRightShort className='text-2xl' />
                     </button>

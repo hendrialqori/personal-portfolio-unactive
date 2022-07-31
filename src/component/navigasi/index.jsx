@@ -16,7 +16,7 @@ export const Navigasi = () => {
     const toTop = () => window.scrollTo({ top: 0, behavior : "smooth" })
 
     const showButton = (e) => {
-        if(window.scrollY > 1500 ) btnTopRef.current.classList.remove("hidden")
+        if(window.scrollY > 150 ) btnTopRef.current.classList.remove("hidden")
         else btnTopRef.current.classList.add("hidden")
     }
 
@@ -38,7 +38,7 @@ export const Navigasi = () => {
                     <img className='bg-white rounded-md' src={github} alt="github-logo" />
                 </a>
             </div>
-            <button ref={btnTopRef} onClick={()=> toTop()} className='hidden fixed bottom-28 right-5 md:right-10 p-1 md:p-2 rounded-full bg-gray-500'>
+            <button ref={btnTopRef} onClick={()=> toTop()} className='hidden z-10 fixed bottom-20 right-5 md:right-10 p-1 md:p-2 rounded-full opacity-70 bg-gray-500'>
                 <AiOutlineArrowUp className='text-white text-xl md:text-2xl' />
             </button>
         </header>
