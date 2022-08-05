@@ -4,7 +4,7 @@ export default  [
         name : "Tricky Blog",
         avatar : "tricky.png",
         stack : "NextJS, TailwindCSS | ExpressJS, PostgreSQL",
-        githubURL : "https://github.com/alqory/Personal-blog-tricky-v2",
+        githubURL : "https://github.com/alqory/tricky-fe",
         siteURL : "https://tricky-app.vercel.app"
     },
     {
