@@ -9,9 +9,7 @@ export const About = () => {
   }, [])
   return (
         <section className="bg-dark2 dark:bg-dark3">
-
             <Certificate showModal={showModal} showTrigger={showTrigger} />
-
             <div className="py-28 w-11/12 md:w-10/12 lg:w-[768px] mx-auto flex flex-col md:flex-row justify-between items-center gap-y-4" aria-label="about-container">
                 <div className="w-full md:w-6/12" aria-label="profile">
                     <h1 className="text-white text-2xl md:text-3xl">
