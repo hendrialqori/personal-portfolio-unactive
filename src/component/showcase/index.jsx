@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import './main.css'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
-import { Card } from '../../component2/card'
+import { Card } from '../../component2/cards'
 import Project from '../../contanst/showcaseProject.js'
 
 export const Showcase = () => {
