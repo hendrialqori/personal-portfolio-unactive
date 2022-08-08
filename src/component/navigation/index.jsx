@@ -4,7 +4,7 @@ import light from './assets/Lightmode.svg'
 import github from './assets/github.svg'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 
-export const Navigasi = () => {
+export const Navigation = () => {
   const btnTopRef = useRef(null)
   const [isDark, setDark] = useState(true)
   const mode = () => {

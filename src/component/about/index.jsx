@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { Certificate } from '../../component2/ModalCertificate'
+import { Certificate } from '../../component2/modalCertificate'
 import { BsArrowRightShort } from 'react-icons/bs'
 
 export const About = () => {

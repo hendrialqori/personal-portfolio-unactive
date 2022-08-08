@@ -1,6 +1,6 @@
-import { Navigasi as Nav } from '../component/navigasi/Index'
+import { Navigation as Nav } from '../component/navigation'
 import { Banner } from '../component/banner'
-import { About } from '../component/about/Index'
+import { About } from '../component/about'
 import { Showcase } from '../component/showcase'
 import { Contact } from '../component/contact'
 import { Footer } from '../component/footer'
