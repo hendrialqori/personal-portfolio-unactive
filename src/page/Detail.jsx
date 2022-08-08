@@ -1,4 +1,4 @@
-import Project from '../contanst/showcaseProject'
+import Project from '../contanst/showcaseProject.js'
 import { Link, useParams } from 'react-router-dom'
 import { IoMdGlobe, IoIosArrowRoundBack } from 'react-icons/io'
 import { FaGithub } from 'react-icons/fa'
@@ -6,7 +6,7 @@ import { GoPrimitiveDot } from 'react-icons/go'
 
 export default function Detail () {
   const { id } = useParams()
-  const Detail = Project.find(P => P.id === id)
+  const Detail = Project.find(P => P.id === parseInt(id))
   return (
           <section className='flex justify-center font-openSans text-sm'>
               <div className='w-11/12 lg:w-[768px] my-3' aria-label='detail-container'>
@@ -17,13 +17,13 @@ export default function Detail () {
                   </Link>
                   <img src={'/' + Detail?.avatar} alt="avatar-project" />
                   <div className='my-3' aria-label='body-detail'>
-                      <h1 className='text-xl font-bold'>{Detail.name}</h1>
+                      <h1 className='text-xl font-bold'>{Detail?.name}</h1>
                       <div className='flex gap-3 my-2' aria-label='site'>
-                          <a className='flex items-center gap-1' href={Detail.siteURL} rel="noreferrer" target="_blank">
+                          <a className='flex items-center gap-1' href={Detail?.siteURL} rel="noreferrer" target="_blank">
                               <IoMdGlobe className='text-2xl' />
                               visit this site
                           </a>
-                          <a className='flex items-center gap-1' href={Detail.githubURL} rel="noreferrer" target="_blank">
+                          <a className='flex items-center gap-1' href={Detail?.githubURL} rel="noreferrer" target="_blank">
                               <FaGithub className='text-xl' />
                               see on github
                           </a>
@@ -31,7 +31,7 @@ export default function Detail () {
                       <div aria-label='tech-stack'>
                           <h3 className='font-semibold'>Tech stack</h3>
                           {
-                              Detail.stack?.map((item, i) => (
+                              Detail?.stack?.map((item, i) => (
                                   <p key={i} className='flex gap-2 items-center'> <GoPrimitiveDot /> {item}</p>
                               ))
                           }

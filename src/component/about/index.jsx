@@ -3,12 +3,11 @@ import { Certificate } from '../../component2/ModalCertificate'
 import { BsArrowRightShort } from 'react-icons/bs'
 
 export const About = () => {
-
-    const [showModal, setModal] = useState(false)
-    const showTrigger = useCallback((e)=> {
-        setModal(prev => !prev)
-    },[])
-    return (
+  const [showModal, setModal] = useState(false)
+  const showTrigger = useCallback((e) => {
+    setModal(prev => !prev)
+  }, [])
+  return (
         <section className="bg-dark2 dark:bg-dark3">
 
             <Certificate showModal={showModal} showTrigger={showTrigger} />
@@ -21,17 +20,9 @@ export const About = () => {
                         <span className="text-green">Alqori</span>
                     </h1>
                     <div className="text-gray-400 font-light leading-7 mt-5 md:mt-10">
-                        A former barista and assistant manager 
-                        with 2.5 years of experience, wants 
-                        to bring this expertise to the field of web
-                        development. Have good management, 
-                        problem solving and communication skills. 
-                        Have top skill for web development including,
-                        React JS, Vue JS, Express JS, Tailwind CSS
-                        and Postgresql (DB) , And for web design
-                        like Figma.
+                        A former barista and assistant manager\n with 2.5 years of experience, wants to bring this expertise to the field of webdevelopment. Have good management, problem solving and communication skills. Have top skill for web development including, React JS, Vue JS, Express JS, Tailwind CSS and Postgresql (DB) , And for web design like Figma.
                     </div>
-                    <button onClick={()=> showTrigger()} className="text-green flex text-sm items-center my-6 md:my-3 font-semibold">
+                    <button onClick={() => showTrigger()} className="text-green flex text-sm items-center my-6 md:my-3 font-semibold">
                         See my certificate
                         <BsArrowRightShort className='text-2xl' />
                     </button>
@@ -48,5 +39,5 @@ export const About = () => {
                 </div>
             </div>
         </section>
-    )
+  )
 }

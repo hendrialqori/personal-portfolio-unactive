@@ -1,7 +1,7 @@
-import "./main.css"
+import './main.css'
 
 export const Banner = () => {
-    return (
+  return (
         <section className="h-[460px] md:h-[400px] mt-10" aria-label="banner-wrapper">
             <div className="h-full w-11/12 md:w-10/12  lg:w-[768px] mx-auto" aria-label="banner-container">
                 <div className="bg-green w-max text-white font-bold px-2 py-1 rounded-md">
@@ -26,6 +26,6 @@ export const Banner = () => {
                     </div>
                </div>
             </div>
-        </section>  
-    )
+        </section>
+  )
 }
