@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import NotFoundPage from './pages/404'
 import Detail from './pages/Detail'
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <Routes>
