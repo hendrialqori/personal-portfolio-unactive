@@ -50,8 +50,8 @@ export const Contact = () => {
                     better- <br /> Together
                 </h1>
                 <div className='flex flex-col-reverse md:flex-row justify-between mt-10'>
-                    <form ref={formRef} onSubmit={handleSubmit} className="w-full md:w-6/12 text-white flex flex-col items-center mt-8 md:mt-0" autoComplete='off' >
-                        <div className="flex gap-x-3 mb-2">
+                    <form ref={formRef} onSubmit={handleSubmit} className="w-full md:w-7/12 lg:w-6/12 text-white flex flex-col items-center mt-8 md:mt-0" autoComplete='off' >
+                        <div className="flex gap-x-3 mb-2 ">
                         {/* eslint-disable no-trailing-spaces  */}
                             <input 
                             name="email"
@@ -79,13 +79,13 @@ export const Contact = () => {
                             value={text}
                             onChange={handleChange}
                             className="rounded-md p-3 outline-none bg-dark3 dark:bg-dark2 mt-1 md:mt-3 w-full md:w-max"
-                            cols="39"
+                            cols={ window.innerWidth > 768 ? '40' : '41' }
                             rows="5"
                             placeholder="text"
                             required
                             />
                         <button 
-                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-light md:font-bold mr-auto hover:opacity-80"
+                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-light md:font-bold ml-0 lg:ml-2 mr-auto hover:opacity-80"
                         >
                         { loading ? 'Loading ..' : 'Submit' }
                         </button>
