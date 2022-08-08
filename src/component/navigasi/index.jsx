@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import dark from './assets/Darkmode.svg'
 import light from './assets/Lightmode.svg'
 import github from './assets/github.svg'
@@ -15,15 +15,15 @@ export const Navigasi = () => {
 
     const toTop = () => window.scrollTo({ top: 0, behavior : "smooth" })
 
-    const showButton = (e) => {
-        if(window.scrollY > 150 ) btnTopRef.current.classList.remove("hidden")
-        else btnTopRef.current.classList.add("hidden")
-    }
+    const showButton = useCallback(()=> {
+        if(window.scrollY > 150 ) btnTopRef?.current?.classList?.remove("hidden")
+        else btnTopRef?.current?.classList?.add("hidden")
+    },[])
 
     useEffect(()=> {
         window.addEventListener("scroll", showButton)     
         document.documentElement.classList.add('dark')
-    },[])
+    },[showButton])
 
 
     return (

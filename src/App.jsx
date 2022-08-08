@@ -1,20 +1,17 @@
-import { Navigasi } from './component/navigasi/index'
-import { Banner } from './component/banner/index'
-import { About } from './component/about/index'
-import { Showcase } from './component/showcase/index'
-import { Contact } from './component/contact/index'
-import { Footer } from './component/footer/index'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Index from './pages/Index'
+import NotFoundPage from './pages/404'
+import Detail from './pages/Detail'
 
 function App() {
   return (
-    <main className='bg-light dark:bg-dark1 font-openSans'>
-      <Navigasi />
-      <Banner />
-      <About />
-      <Showcase />
-      <Contact />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Index />} />
+          <Route path='detail/:id' element={<Detail />} />
+          <Route path='*' element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
