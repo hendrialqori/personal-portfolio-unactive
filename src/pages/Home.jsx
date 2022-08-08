@@ -1,9 +1,9 @@
-import { Navigasi } from '../component/Navigasi/index'
-import { Banner } from '../component/banner/index'
-import { About } from '../component/about/index'
-import { Showcase } from '../component/showcase/index'
-import { Contact } from '../component/contact/index'
-import { Footer } from '../component/footer/index'
+import { Navigasi } from '../component/Navigasi'
+import { Banner } from '../component/banner'
+import { About } from '../component/about'
+import { Showcase } from '../component/showcase'
+import { Contact } from '../component/contact'
+import { Footer } from '../component/footer'
 
 export default function Home () {
   return (
