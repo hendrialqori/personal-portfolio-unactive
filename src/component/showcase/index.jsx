@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import './main.css'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
-import { Card } from '../../component2/cards'
+import { Showcard } from '../../component2/showcard'
 import Project from '../../contanst/showcaseProject.js'
 
 export const Showcase = () => {
@@ -43,7 +43,7 @@ export const Showcase = () => {
                         >
                         {
                             Project.map((item) => (
-                                <Card key={item.id} {...item} />
+                                <Showcard key={item.id} {...item} />
                             ))
                         }
                     </motion.div>
