@@ -18,7 +18,7 @@ export const About = () => {
                         <span className="text-green">Alqori</span>
                     </h1>
                     <div className="text-gray-400 font-light leading-7 mt-5 md:mt-10">
-                        A former barista and assistant manager\n with 2.5 years of experience, wants to bring this expertise to the field of webdevelopment. Have good management, problem solving and communication skills. Have top skill for web development including, React JS, Vue JS, Express JS, Tailwind CSS and Postgresql (DB) , And for web design like Figma.
+                        A former barista and assistant manager with 2.5 years of experience, wants to bring this expertise to the field of web development. Have good management, problem solving and communication skills. Have top skill for web development such as React JS, Vue JS, Express JS, Tailwind CSS and Postgresql (DB) , And for web design like Figma.
                     </div>
                     <button onClick={() => showTrigger()} className="text-green flex text-sm items-center my-6 md:my-3 font-semibold">
                         See my certificate
