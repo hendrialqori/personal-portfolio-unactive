@@ -38,9 +38,9 @@ export default [
     id: 5,
     name: 'Weather App',
     avatar: 'cuaca.png',
-    stack: ['Vanilla Javascript', 'Tailwind css'],
-    githubURL: 'https://github.com/alqory/Personal-portfolio',
-    siteURL: 'https://cuacaapi.netlify.app/'
+    stack: ['React Js', 'Tailwind css'],
+    githubURL: 'https://github.com/alqory/Weather',
+    siteURL: 'https://cuaca-today.netlify.app'
   },
   {
     id: 6,
