@@ -19,15 +19,15 @@ export const Showcase = () => {
     })
   }
   return (
-        <section className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto py-28">
-            <h1 className="text-5xl font-extrabold text-black dark:text-white">
+        <section className="w-full md:w-10/12 lg:w-[768px] mx-auto py-28">
+            <h1 className="text-5xl font-extrabold ml-4 md:ml-0 text-black dark:text-white">
                 Project <br /> Showcase.
             </h1>
             <div className='mt-10 flex items-center gap-x-3' aria-label='showcase-wrapper-component'>
                 <button onClick={() => toRight()} className='hidden md:block bg-gray-600 h-max p-2 rounded-full hover:bg-gray-400 '>
                     <AiOutlineLeft className='text-white' />
                 </button>
-                <div className='bg-gray-800 overflow-hidden rounded-md' aria-label='showcase-wrapper'>
+                <div className='bg-gray-800 ml-4 md:ml-0 overflow-hidden rounded-l-md md:rounded-md' aria-label='showcase-wrapper'>
                     {/*  eslint-disable no-trailing-spaces */}
                     <motion.div 
                         drag={ window.innerWidth < 768 ? 'x' : false }
