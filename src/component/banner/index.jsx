@@ -16,7 +16,7 @@ export const Banner = () => {
                     </h1>
                     <div className="flex my-2 text-xs md:text-base gap-x-2 md:gap-x-5 text-black dark:text-white" aria-label="information-wrapper">
                         <div className="flex flex-col items-center" aria-label="project-iw">
-                            <h2 className="text-xl md:text-3xl font-bold dark:text-green">7</h2>
+                            <h2 className="text-xl md:text-3xl font-bold text-green">7</h2>
                             <p className="font-base dark:font-light text-black dark:text-gray-400">Project create</p>
                         </div>
                         <div className="flex flex-col items-center" aria-label="drank-iw">

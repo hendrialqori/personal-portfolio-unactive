@@ -31,7 +31,7 @@ export const Showcase = () => {
                     {/*  eslint-disable no-trailing-spaces */}
                     <motion.div 
                         drag={ window.innerWidth < 768 ? 'x' : false }
-                        dragConstraints={{ left: -3100, right: 0 }}
+                        dragConstraints={{ left: -3800, right: 0 }}
                         animate={{
                           x: xCord,
                           transition: {
