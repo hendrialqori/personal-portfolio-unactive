@@ -1,5 +1,5 @@
 ### Personal website who builtin with love🧡 and coffee☕, [Visit this site](https://hendrialqori.vercel.app)
-#### Tech stact
+#### Tech stack
 - React js + vite
 - Tailwind css
 - Vercel (Deploying)
@@ -11,3 +11,5 @@
 - Email JS
 
 You can clone, but don't forget the star 😄, Enjoy the day, bruh!
+
+
