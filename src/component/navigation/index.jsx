@@ -31,7 +31,7 @@ export const Navigation = () => {
                     <img style={{ transform: isDark ? 'translateY(0px)' : 'translateY(-33px)' }} src={light} alt="light-mode-icon" />
                     <img style={{ transform: isDark ? 'translateY(0px)' : 'translateY(-33px)' }} src={dark} alt="light-mode-icon" />
                 </button>
-                <a href='https://github.com/alqory' target="_blank" rel="noreferrer" >
+                <a href='https://github.com/hendrialqori' target="_blank" rel="noreferrer" >
                     <img className='bg-white rounded-md' src={github} alt="github-logo" />
                 </a>
             </div>
