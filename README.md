@@ -1,15 +1,17 @@
 ### Personal website who builtin with love🧡 and coffee☕, [Visit this site](https://hendrialqori.vercel.app)
+
 #### Tech stack
 - React js + vite
 - Tailwind css
-- Vercel (Deploying)
+- Vercel (Deploy)
 
 
 ##### Additional libarry
 - React icons
 - Framer motion
 - Email JS
+- Image lazy Load
 
-You can clone, but don't forget the star 😄, Enjoy the day, bruh!
+You can clone, but don't forget the star 😄, Enjoy the day bruh!
 
 
