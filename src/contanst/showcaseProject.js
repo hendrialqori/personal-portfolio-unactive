@@ -1,12 +1,12 @@
 export default [
   {
     id: 1,
-    name: 'Tricky Blog',
+    name: 'Tricky',
     avatar: 'tricky.png',
-    stack: ['Next Js', 'Tailwind css', 'Express Js', ' PostgreSQL'],
-    githubURL: 'https://github.com/hendrialqori/tricky-fe',
-    siteURL: 'https://tricky-app.vercel.app',
-    purpose: 'Blog fullstack web application built with React as frontend, Express as backend and Postgre sql as database, My goal in making this is to share knowledge about programming and to test how far I can go in building web applications and to understand how websites work.'
+    stack: ['Next (typescript)', 'Css (native)'],
+    githubURL: 'https://github.com/hendrialqori/tricky',
+    siteURL: 'https://blog-tricky.vercel.app',
+    purpose: 'Tricky is a blog that provides articles about web development specifically in the frontend realm'
   },
   {
     id: 2,
