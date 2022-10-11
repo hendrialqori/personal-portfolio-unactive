@@ -5,6 +5,7 @@ import html from './assets/html.jpg'
 import css from './assets/css.jpg'
 import js from './assets/js.png'
 import pro from './assets/pro.jpeg'
+import react from './assets/devcode.jpg'
 
 export const Certificate = ({ showModal, showTrigger }) => {
   return (
@@ -26,6 +27,7 @@ export const Certificate = ({ showModal, showTrigger }) => {
         <div
             className="bg-inherit w-11/12 md:w-10/12 lg:w-[768px] mx-auto h-[550px] mb-2 rounded-md overflow-auto flex flex-wrap gap-y-3 pb-24"
             aria-label="modal-container">
+                <img src={react} alt="image" />
                 <img src={pro} alt="image" />
                 <img src={kodio} alt="image" />
                 <img src={js} alt="image" />
