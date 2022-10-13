@@ -14,7 +14,7 @@ const iconsList = [
   },
   {
     type: 'fe',
-    svg: 'vue.svg'
+    svg: 'ts.svg'
   },
   {
     type: 'fe',
@@ -58,7 +58,7 @@ export const About = () => {
                         <span className="text-green">Alqori</span>
                     </h1>
                     <div className="text-gray-400 font-light leading-7 mt-5 md:mt-10">
-                        A former barista and assistant manager with 2.5 years of experience, wants to bring this expertise to the field of web development. Have good management, problem solving and communication skills. Have top skill for web development such as React JS, Vue JS, Express JS, Tailwind CSS and Postgresql (DB) , And for web design like Figma.
+                        A former barista and assistant manager with 2.5 years of experience, wants to bring this expertise to the field of web development. Have good management, problem solving and communication skills. Have top skill for web development such as React, Next, Express, Tailwind CSS and Postgresql (DB) , And for web design like Figma.
                     </div>
                     <button onClick={showTrigger} className="text-green flex text-sm items-center my-6 md:my-3 font-semibold border-[1px] border-green px-2 py-1 rounded-md">
                         See my certificate
@@ -72,7 +72,7 @@ export const About = () => {
                     </div>
                     <div className="dark:bg-dark2 bg-dark3 rounded-md py-5 px-8" aria-label="design">
                         <h1 className="text-green/80 text-xl font-extrabold mb-3">Front-End tools</h1>
-                        <div className='flex items-center gap-3'>
+                        <div className='flex justify-center items-center gap-3'>
                             {iconsList.filter(icon => icon.type === 'fe').map((icon, i) => (
                                 <IconComponent key={i} svg={'/icons/fe/' + icon.svg} />
                             ))}
