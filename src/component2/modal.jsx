@@ -6,8 +6,9 @@ import css from './assets/css.jpg'
 import js from './assets/js.png'
 import pro from './assets/pro.jpeg'
 import react from './assets/devcode.jpg'
+import { memo } from 'react'
 
-export const Certificate = ({ showModal, showTrigger }) => {
+export const Certificate = memo(function _ ({ showModal, showTrigger }) {
   return (
         <motion.div initial={{ opacity: 0, y: -900 }}
          exit={{ opacity: 0 }}
@@ -36,4 +37,4 @@ export const Certificate = ({ showModal, showTrigger }) => {
         </div>
         </motion.div>
   )
-}
+})

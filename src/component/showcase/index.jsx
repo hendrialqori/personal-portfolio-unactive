@@ -28,7 +28,7 @@ export const Showcase = () => {
                     <AiOutlineLeft className='text-white' />
                 </button>
                 <div className='bg-gray-800 ml-4 md:ml-0 overflow-hidden rounded-l-md md:rounded-md' aria-label='showcase-wrapper'>
-                    {/*  eslint-disable no-trailing-spaces */}
+                     {/* eslint-disable no-trailing-spaces */}
                     <motion.div 
                         drag={ window.innerWidth < 768 ? 'x' : false }
                         dragConstraints={{ left: -546 * Project.length, right: 0 }}

@@ -24,7 +24,7 @@ export const Navigation = () => {
     document.documentElement.classList.add('dark')
   }, [showButton])
   return (
-        <header className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto flex justify-between items-center py-7 md:py-12">
+        <header className="container mx-auto flex justify-between items-center py-7 md:py-12">
             <h1 className=' text-black dark:text-white dark:font-light' ><span className="font-bold">Hendri</span> Alqori</h1>
             <div className='flex gap-x-2' aria-label="wrapper-logo">
                 <button className='overflow-hidden h-8' onClick={() => mode()}>

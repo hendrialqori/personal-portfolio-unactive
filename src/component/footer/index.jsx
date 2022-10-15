@@ -1,18 +1,21 @@
-import love from './assets/love.svg'
-import { ImLocation } from 'react-icons/im'
+import './main.css'
 
 export const Footer = () => {
   return (
-        <footer className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto flex flex-col md:flex-row justify-between items-center py-4 font-light text-xs lg:text-sm text-black dark:text-gray-300">
-            <div className='flex items-center'>
-                Design and build with
-                <img className='mx-1 w-4 md:w-5' src={love} alt="love-icon" />
-                by Hendri Alqori@2022.
-            </div>
-            <div className='flex items-center gap-x-2'>
-                <ImLocation className='text-lg text-black dark:text-white' />
-                <p>Mandor, Landak, West Borneo.</p>
-            </div>
+        <footer className="container mx-auto flex flex-col md:flex-row gap-5 md:justify-between items-start md:items-center py-16 lg:text-sm bg-dark2 text-black ">
+            <section className='text-base font-semibold flex flex-col gap-3 text-white/50'>
+                <a href="https://github.com/hendrialqori" target="_blank" rel="noreferrer">Github</a>
+                <a href="https://www.linkedin.com/in/hendri-alqori-b87a52171/" target="_blank" rel="noreferrer">Linkedin</a>
+            </section>
+            <section className='text-base font-semibold flex flex-col gap-3 text-white/50'>
+                <a href="https://blog-tricky.vercel.app/" target="_blank" rel="noreferrer">Blog</a>
+                <a href="https://www.instagram.com/hendrialqori/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://twitter.com/hendrialqori/" target="_blank" rel="noreferrer">Twitter</a>
+            </section>
+            <section className='flex items-center justify-between gap-3 text-xl'>
+                <img src="/H.png" alt="h-icon" width={45} />
+                <h1 className='text-white dark:font-light' ><span className="font-bold">Hendri</span> Alqori</h1>
+            </section>
         </footer>
   )
 }

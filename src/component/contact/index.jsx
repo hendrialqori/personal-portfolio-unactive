@@ -45,12 +45,12 @@ export const Contact = () => {
   }
   return (
         <section className="bg-dark2 dark:bg-dark3">
-            <div className="w-11/12 md:w-10/12 lg:w-[768px] mx-auto py-28">
+            <div className="container mx-auto py-28">
                 <h1 className="text-green text-5xl font-extrabold text-right">
                     better- <br /> Together
                 </h1>
                 <div className='flex flex-col-reverse md:flex-row justify-between mt-10'>
-                    <form ref={formRef} onSubmit={handleSubmit} className="w-full md:w-7/12 lg:w-6/12 text-white flex flex-col items-center mt-8 md:mt-0" autoComplete='off' >
+                    <form ref={formRef} onSubmit={handleSubmit} className="overflow-hidden w-full md:w-7/12 lg:w-6/12 text-white flex flex-col items-center mt-8 md:mt-0" autoComplete='off' >
                         <div className="flex gap-x-3 mb-2 ">
                         {/* eslint-disable no-trailing-spaces  */}
                             <input 
@@ -78,14 +78,14 @@ export const Contact = () => {
                             name="text"
                             value={text}
                             onChange={handleChange}
-                            className="rounded-md p-3 outline-none bg-dark3 dark:bg-dark2 mt-1 md:mt-3 w-full md:w-max"
+                            className="rounded-md p-4 outline-none bg-dark3 dark:bg-dark2 mt-1 md:mt-3 w-full md:w-max placeholder:pl-2"
                             cols={ window.innerWidth > 768 ? '40' : '41' }
                             rows="5"
                             placeholder="text"
                             required
                             />
                         <button 
-                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-light md:font-bold ml-0 lg:ml-2 mr-auto hover:opacity-80"
+                        className="bg-green text-sm mt-4 text-white rounded-sm py-1 md:py-2 px-6 md:px-10 font-light md:font-bold mr-auto hover:opacity-80"
                         >
                         { loading ? 'Loading ..' : 'Submit' }
                         </button>

@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+ .container {
+  @apply w-11/12 md:w-10/12 lg:w-[768px]
+ }
+}
 
 *:not([aria-label="modal-wrapper"]) {
     transition: all .3s linear;
