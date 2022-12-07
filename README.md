@@ -1,4 +1,4 @@
-### Personal website who builtin with love🧡 and coffee☕, [Visit this site](https://hendrialqori.vercel.app)
+### Personal website who builtin with love🧡 and coffee☕
 
 #### Tech stack
 - React js + vite
